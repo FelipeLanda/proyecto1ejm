@@ -6,7 +6,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Aplicacion 1</title>
 </head>
-<body>
+<script type="text/javascript" src="js/Util.js"></script>
+
+<body onload="getNombre('Cristian')">
 
 </body>
 </html>
