@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#index.jsp" PATH="/index.jsp"
+  SHAPE="166,158,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#index.jsp:0" NAME="item" PATH="/index.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="bienvenido::#bienvenido.jsp" NAME="output"
+    PATH="/bienvenido.jsp" TARGET="rules:#bienvenido.jsp"
+    TITLE="bienvenido" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="error::#index.jsp" NAME="output1"
+    PATH="/index.jsp" TARGET="rules:#index.jsp" TITLE="error" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#bienvenido.jsp" PATH="/bienvenido.jsp"
+  SHAPE="368,152,50,25" model-entity="JSFProcessGroup" persistent="true"/>
+</PROCESS>
