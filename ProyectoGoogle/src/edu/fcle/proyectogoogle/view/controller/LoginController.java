@@ -16,7 +16,7 @@ public class LoginController {
 	private DataAccessService dataAccessService;;
 
 	public LoginController() {		
-		dataAccessService=new DataAccessServiceImpl();//(DataAccessServiceImpl)ServiceFinder.findBean("dataAccessService");
+		dataAccessService=new DataAccessServiceImpl();//(DataAccessService)ServiceFinder.findBean("dataAccessService");
 		login=(Login)ServiceFinder.findBean("login");
 	}
 	

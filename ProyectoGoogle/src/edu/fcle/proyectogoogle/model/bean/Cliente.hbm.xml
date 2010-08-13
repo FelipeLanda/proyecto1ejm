@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 12/08/2010 09:38:35 PM by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="edu.fcle.proyectogoogle.model.bean.Cliente" table="cliente" catalog="proyectogoogle">
+        <id name="idCliente" type="int">
+            <column name="ID_CLIENTE" />
+            <generator class="assigned" />
+        </id>
+        <property name="usuarioCliente" type="string">
+            <column name="USUARIO_CLIENTE" length="15" />
+        </property>
+        <property name="claveCliente" type="string">
+            <column name="CLAVE_CLIENTE" length="15" />
+        </property>
+        <property name="apepatCliente" type="string">
+            <column name="APEPAT_CLIENTE" length="20" />
+        </property>
+        <property name="apematCliente" type="string">
+            <column name="APEMAT_CLIENTE" length="20" />
+        </property>
+        <property name="nombresCliente" type="string">
+            <column name="NOMBRES_CLIENTE" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>
