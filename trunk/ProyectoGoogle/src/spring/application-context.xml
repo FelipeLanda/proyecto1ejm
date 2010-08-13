@@ -2,10 +2,12 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-
-
-	<bean id="dataAccessService" class="edu.fcle.proyectogoogle.service.impl.DataAccessServiceImpl"/>	
-	<bean id="login" class="edu.fcle.proyectogoogle.view.model.Login"/>
 	
+	<bean id="login" class="edu.fcle.proyectogoogle.view.model.Login"/>	
+	<bean id="clienteDao" class="edu.fcle.proyectogoogle.persistence.dao.impl.ClienteDaoImpl" />
+
+	<bean id="dataAccessService" class="edu.fcle.proyectogoogle.service.impl.DataAccessServiceImpl">
+		<property name="clienteDao" ref="clienteDao" />
+	</bean>	
 	
 </beans>
